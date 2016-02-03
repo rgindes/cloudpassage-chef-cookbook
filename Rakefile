@@ -41,3 +41,4 @@ task integration: ['integration:vagrant', 'integration:ec2']
 task travis: [:style, :spec]
 
 task default: [:style, :spec, :integration]
+task ec2: [:style, :spec, :integration:ec2]
